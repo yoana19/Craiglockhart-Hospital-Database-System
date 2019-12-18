@@ -70,6 +70,91 @@ while True:
             print("Age: ", row[2])
             print("Occupation: ", row[3])
             print("\n")
+    elif anw == "layard" or "Layard" or "john" or "John":
+        sqlite_select_query = """SELECT * from patients WHERE id=1"""
+        cursor.execute(sqlite_select_query)
+        records = cursor.fetchall()
+        for row in records:
+            print("id: ", row[0])
+            print("First Name: ", row[1]) 
+            print("Last Name: ", row[2])
+            print("Age: ", row[3])
+            print("Diagnosis: ", row[4])
+            print("Military Status: ", row[5])
+            print("Social Status: ", row[6])
+            print("Occupation: ", row[7])
+            print("\n")
+    elif anw == "siegfried" or "Siegfried" or "sassoon" or "Sassoon":
+        sqlite_select_query = """SELECT * from patients WHERE id=2"""
+        cursor.execute(sqlite_select_query)
+        records = cursor.fetchall()
+        for row in records:
+            print("id: ", row[0])
+            print("First Name: ", row[1]) 
+            print("Last Name: ", row[2])
+            print("Age: ", row[3])
+            print("Diagnosis: ", row[4])
+            print("Military Status: ", row[5])
+            print("Social Status: ", row[6])
+            print("Occupation: ", row[7])
+            print("\n")
+    elif anw == "burns" or "Burns" or "david" or "David":
+        sqlite_select_query = """SELECT * from patients WHERE id=3"""
+        cursor.execute(sqlite_select_query)
+        records = cursor.fetchall()
+        for row in records:
+            print("id: ", row[0])
+            print("First Name: ", row[1]) 
+            print("Last Name: ", row[2])
+            print("Age: ", row[3])
+            print("Diagnosis: ", row[4])
+            print("Military Status: ", row[5])
+            print("Social Status: ", row[6])
+            print("Occupation: ", row[7])
+            print("\n")
+    elif anw == "prior" or "Prior" or "billy" or "Billy":
+        sqlite_select_query = """SELECT * from patients WHERE id=4"""
+        cursor.execute(sqlite_select_query)
+        records = cursor.fetchall()
+        for row in records:
+            print("id: ", row[0])
+            print("First Name: ", row[1]) 
+            print("Last Name: ", row[2])
+            print("Age: ", row[3])
+            print("Diagnosis: ", row[4])
+            print("Military Status: ", row[5])
+            print("Social Status: ", row[6])
+            print("Occupation: ", row[7])
+            print("\n")
+    elif anw == "anderson" or "Anderson" or "ralph" or "Ralph":
+        sqlite_select_query = """SELECT * from patients WHERE id=5"""
+        cursor.execute(sqlite_select_query)
+        records = cursor.fetchall()
+        for row in records:
+            print("id: ", row[0])
+            print("First Name: ", row[1]) 
+            print("Last Name: ", row[2])
+            print("Age: ", row[3])
+            print("Diagnosis: ", row[4])
+            print("Military Status: ", row[5])
+            print("Social Status: ", row[6])
+            print("Occupation: ", row[7])
+            print("\n")
+    elif anw == "willard" or "Willard":
+        sqlite_select_query = """SELECT * from patients WHERE id=6"""
+        cursor.execute(sqlite_select_query)
+        records = cursor.fetchall()
+        for row in records:
+            print("id: ", row[0])
+            print("First Name: ", row[1]) 
+            print("Last Name: ", row[2])
+            print("Age: ", row[3])
+            print("Diagnosis: ", row[4])
+            print("Military Status: ", row[5])
+            print("Social Status: ", row[6])
+            print("Occupation: ", row[7])
+            print("\n")
+    
     else:
         print ("Invalid input. Returning to main screen...")
         continue
